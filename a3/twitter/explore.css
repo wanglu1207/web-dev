@@ -1,0 +1,98 @@
+.wd- {
+  background-color: black;
+  border-color: rgb(47, 51, 54);
+  border-right: 12px;
+}
+
+.wd-placeholder {
+  border-radius: 40px;
+  color: white;
+  background-color: darkgray;
+}
+
+.wd-for-you-color {
+  color: rgb(29, 161, 242);
+}
+
+.wd-hyperlink {
+  color: rgb(110, 118, 125);
+  font-size: 15px;
+  padding: 16px;
+}
+
+.wd-topics {
+  font-size: 13px;
+  color: rgb(110, 118, 125);
+}
+
+.wd-lables {
+  color: white;
+}
+
+.wd-bookmarks {
+  border-left: 16px;
+  border-top: 12px;
+  color: white;
+  font-size: 20px;
+}
+
+.wd-handle {
+  color: lightgray;
+  font-size: 13px;
+  padding-top: 16px;
+  padding-bottom: 12px;
+}
+.wd-img {
+  float: right;
+  border-radius: 12px;
+}
+
+.wd-avatar {
+  /* border-left: 16px; */
+  /* border-bottom: 12px; */
+  border-radius: 48px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.wd-rob {
+  margin-right: 40px;
+}
+
+.wd-rob-author {
+  color: white;
+  font-size: 15px;
+}
+
+.wd-rob-handle {
+  color: lightgray;
+  font-size: 15px;
+}
+
+.wd-rob-data {
+  color: white;
+  font-size: 15px;
+  padding-left: 12px;
+  padding-right: 16px;
+}
+
+.fas {
+  color: red;
+}
+
+.wd-cog {
+  color: cornflowerblue;
+}
+
+.far {
+  color: rgb(110, 118, 125);
+}
+
+.wd-fas {
+  color: cornflowerblue;
+}
+
+.fab {
+  color: rgb(110, 118, 125);
+}
