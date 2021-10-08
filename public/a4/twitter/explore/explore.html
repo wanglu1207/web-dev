@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="explore.css">
+</head>
+  <body>
+      <div class="container">
+          <h2>Hiding and showing responsive content</h2>
+          <div class="d-block d-sm-none fa-2x">XS</div>
+          <div class="d-none d-sm-block d-md-none fa-2x">S</div>
+          <div class="d-none d-md-block d-lg-none fa-2x">M</div>
+          <div class="d-none d-lg-block d-xl-none fa-2x">L</div>
+          <div class="d-none d-xl-block d-xxl-none fa-2x">XL</div>
+          <div class="d-none d-xxl-block fa-2x">XXL</div>
+      <div class="row mt-2">
+        <div class="col-2 col-lg-2">
+    
+        <div class="list-group">
+            <a class="list-group-item" href="#" style="color: black;"><i class="fab fa-twitter"></i></a>
+            <a class="list-group-item" href="#" style="color: black;"><i class="fas fa-home"> <span class="d-none d-lg-block"> Home</span></i></a>
+            <a class="list-group-item active" href="#"><i class="fas fa-hashtag"><span class="d-none d-lg-block"> Explore</span></i></a>
+            <a class="list-group-item" href="#" style="color: black;"><i class="fas fa-bell"><span class="d-none d-lg-block"> Notifications</span></i></a>
+            <a class="list-group-item" href="#" style="color: black;"><i class="fas fa-envelope"><span class="d-none d-lg-block"> Messages</span></i></a>
+            <a class="list-group-item" href="#" style="color: black;"><i class="fas fa-bookmark"><span class="d-none d-lg-block"> Bookmarks</span></i></a>
+            <a class="list-group-item" href="#" style="color: black;"><i class="fas fa-list"><span class="d-none d-lg-block"> Lists</span></i></a>
+            <a class="list-group-item" href="#" style="color: black;"><i class="fas fa-user"><span class="d-none d-lg-block"> Profile</span></i></a>
+            <a class="list-group-item" href="#" style="color: black;"><i class="fas fa-comment-dots"><span class="d-none d-lg-block"> More</span></i></a>
+        </div>
+            <button class="btn btn-lg btn-primary mt-2" style="border-radius: 51px; width: 100%;">
+                Tweet
+            </button>
+    </div>
+
+    <div class="col-6 col-lg-6">
+        <div class="row mb-2">
+            <div class="col-1" style="position: absolute; left: 15px; top: 6px;">
+            <i class="fas fa-search"></i>
+        </div>
+            <div class="col-11">
+                <input class="form-control" placeholder="Search Twitter" style="padding-left: 34px; border-radius: 51px;"/>
+            </div> 
+            <div class="col-1 mt-1"> 
+                <a href="explore-settings.html">
+                    <i class="fas fa-cog fa-2x"></i>
+                </a>
+            </div>
+            <div class="col-2">
+                <i class="fas fa-search" style="position: absolute; bottom: 10px;left: 26px;"></i>
+            </div>
+        </div>
+
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="for-you.html">For you</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="trending.html">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="news.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="sports.html">Sports</a>
+                </li>
+                <li class="nav-item d-sm-none d-md-block">
+                    <a class="nav-link " href="entertainment.html">Entertainment</a>
+                </li>
+            </ul>
+
+
+        <ul class="list-group">
+            <li class="list-group-item">
+                <div class="wd-spacex">
+                    <img src="spaceX.jpeg" alt="spaceX" style="width:100%;">
+                    <div class="wd-bottom-left" style="    color: white; position: absolute;bottom: 23px;left: 31px;font-size: 3em;">SpaceX's startship</div>
+            </div>
+            </li>
+
+            <li class="list-group-item">     
+            <div class="row">     
+
+            <div class="col-9">
+            <p style="color: darkgray;">Web Development <br>
+            <span style="color: black; font-weight: bold;"> ReactJS <i class="fas fa-check-circle"></i> </span> <span>- 2h </span> <br>
+            <span style="color: black; font-weight: bold;"> React.js is a component based front end library that makes it very easy to build Single Page Application or SPAs</span></p>
+            </div>
+
+            <div class="col-3">
+            <img src="react.png" alt="react" class="wd-img">
+            </div>
+        </div>  
+    </li>
+
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-9">
+            <p style="color: darkgrey;">
+                <span style="color: black; font-weight: bold;">JavaScript</span><i class="fas fa-check-circle"></i> - 2h <br> 
+            <span style="color: black; font-weight: bold;">
+                JavaScript is programming language that can run on browsers 
+                as well as desktops 
+            </span> <br>
+                123K Tweets</p>
+            </div>
+                <div class="col-3">
+                    <img src="js.png" alt="js" class="wd-img">
+                </div>
+        </div>
+        </li>
+
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-9">
+                <p style="color: darkgrey;">
+                Web Development <br>
+                <span style="color: black; font-weight: bold;"> jQuery </span><br>
+                123K Tweets</div></p>
+                <div class="col-3">
+                    <img src="jquery.png" alt="jquery" class="wd-img"></div>
+            </div>
+        </li>
+        
+
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-9">
+                <p style="color: darkgrey;">
+                Web Development <br>
+                <span style="color: black; font-weight: bold;"> NodeJS <i class="fas fa-check-circle"></i> </span>- 2h <br>
+                123K Tweets
+            </p></div>
+                <div class="col-3"><img src="nodejs.png" alt="nodejs" class="wd-img"></div>
+            </div>
+        </li>
+    </ul>
+    </div>
+
+    <div class="d-none d-lg-block col-4 col-lg-4">
+        <ul class="list-group">
+            <li class="list-group-item" style="font-weight: bold;">Who to follow</li>
+            <li class="list-group-item" style="display: flex; justify-content: space-between">
+                <!-- <div class="row"> -->
+                <!-- <div class="col-2 col-lg-2"> -->
+                    <div>
+                    <img src="java.png" alt="java" class="avatar">
+                </div>
+                <!-- <div class="col-7 col-lg-7"> -->
+                    <div>
+                    <span style="font-weight: bold;">Java <i class="fas fa-check-circle"></i></span> <br>
+                    @Java
+                </div>
+                <!-- <div class="col-3 col-lg-3"> -->
+                    <div>
+                    <button type="submit" class="btn btn-primary" style="border-radius: 51px;">Follow</button>
+                <!-- </div> -->
+            </div>
+            </li>
+
+            <li class="list-group-item"  style="display: flex; justify-content: space-between">
+                <!-- <div class="row"> -->
+                    <div >
+                        <img src="relativity.jpeg" alt="relativity" class="avatar">
+                    </div>
+                    <div >
+                        <span style="font-weight: bold;">Relativity Space <i class="fas fa-check-circle"></i></span> <br>
+                        @relativityspace
+                    </div>
+                    <div >
+                        <button type="submit" class="btn btn-primary" style="border-radius: 51px;">Follow</button>
+                    <!-- </div>  -->
+                </div>
+            </li>
+
+
+
+            <li class="list-group-item"  style="display: flex; justify-content: space-between">
+                <!-- <div class="row"> -->
+
+                <div >
+                    <img src="virgin.png" alt="virgin" class="avatar">
+                </div>
+
+                <div >
+                    <span style="font-weight: bold;">Virgin Galactic <i class="fas fa-check-circle"></i></span> <br>
+                    @virgingalactic
+                </div>
+
+                <div >
+                    <button type="submit" class="btn btn-primary" style="border-radius: 51px;">Follow</button>
+                <!-- </div> -->
+            </div>
+            </li>
+
+            <li class="list-group-item"  style="display: flex; justify-content: space-between">
+                <!-- <div class="row"> -->
+                <div >
+                    <img src="nasa.png" alt="nasa" class="avatar">
+                </div>
+                <div >
+                    <span style="font-weight: bold;">NASA <i class="fas fa-check-circle"></i></span> <br>
+                    @NASA
+                </div>
+                <div >
+                    <button type="submit" class="btn btn-primary" style="border-radius: 51px;">Follow</button>
+                <!-- </div> -->
+            </div>
+            </li>
+
+            <li class="list-group-item"  style="display: flex; justify-content: space-between">
+                <!-- <div class="row"> -->
+                <div >
+                    <img src="tesla.jpeg" alt="tesla" class="avatar">
+                </div>
+                <div >
+                    <span style="font-weight: bold;">Tesla <i class="fas fa-check-circle"></i></span> <br>
+                    @Tesla
+                </div>
+                <div >
+                    <button type="submit" class="btn btn-primary" style="border-radius: 51px;">Follow</button>
+                <!-- </div> -->
+            </div>
+            </li>
+
+        </ul>
+
+    </div>
+</div>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
