@@ -1,0 +1,29 @@
+.wd-avatarIcon{
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.wd-topic{
+    color: darkgray;
+}
+
+.wd-userName{
+    color:white;
+}
+
+.wd-title{
+    color:white;
+    font-weight: bold;
+}
+
+.wd-image{
+    float: right;
+    border-radius: 12px;
+    width: 100px;
+    height: 100px;
+ }
+
+.wd-none{
+    display:none;
+}
