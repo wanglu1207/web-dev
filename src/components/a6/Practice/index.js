@@ -4,12 +4,14 @@ import Styles from "./Styles";
 import ConditionalOutput from "./ConditionalOutput";
 import TodoItem from "./Todo/TodoItem";
 import TodoList from "./Todo/TodoList";
+import Build from "../Build";
 //import {Link} from "react-router-dom";
 
 const Practice = () => {
     return(
         <div>
             <h1>Practice</h1>
+            <Build/>
             <TodoList/>
             <TodoItem/>
             <ConditionalOutput/>
