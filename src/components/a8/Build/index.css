@@ -1,0 +1,79 @@
+.wdFaSearch{
+    color:white;
+    position:absolute;
+    left:25px;
+    top:9px;
+}
+
+.wdSearchPlaceholder{
+    background-color: darkgrey;
+    padding-left:34px;
+    border-radius: 51px
+}
+
+.wdButton{
+    color: white;
+    position: absolute;
+    bottom: 23px;
+    left: 31px;
+    font-size: 3em
+}
+
+.wdImage{
+    width:100%
+}
+
+.wd-userName{
+    font-size: 11px;
+}
+
+.wd-userName-bgColor{
+    color: white;
+}
+
+.wd-handle{
+    font-size: 11px;
+}
+
+.wd-follow{
+    font-size: 13px;
+}
+
+.wd-avatarIcon{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.wd-topic{
+    color: darkgray;
+}
+
+.wd-userName{
+    color:white;
+}
+
+.wd-title{
+    color:white;
+    font-weight: bold;
+}
+
+.wd-image{
+    float: right;
+    border-radius: 12px;
+    width: 100px;
+    height: 100px;
+}
+
+.wd-none{
+    display:none;
+}
+
+.wd-style-card-border{
+    border: solid 1px rgb(47,51,54);
+    border-radius: 10px;
+}
+
+.wd-card-body{
+    border-bottom: solid 1px rgb(47,51,54);
+}
