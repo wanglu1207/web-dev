@@ -2,87 +2,51 @@ import './App.css'
 import './vendors/bootstrap/css/bootstrap.min.css';
 import './vendors/bootstrap/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
-// import HomeScreen from "./components/a6/Build/HomeScreen/HomeScreen";
-// import ExploreScreen from "./components/a6/Build/ExploreScreen/ExploreScreen";
 
-import {BrowserRouter, Route} from "react-router-dom";
-import Practice from "./components/a7/Practice";
-import Build from "./components/a7/Build";
+import {BrowserRouter, Link, Route} from "react-router-dom";
+import HomeworkSix from "./components/a6/HomeworkSix";
+import HomeworkSeven from "./components/a7";
 import APIExamples from "./components/a8/Practice/APIExamples";
 import MovieApiClient from "./components/a8/Practice/APIExamples/MovieApiClient";
-// import ProfileReduxExample from "./components/a7/twitter/profile";
-//
-// import who from "./reducers/who";
-// import posts from "./reducers/posts";
-// import ProfilePage from "./components/a7/twitter/profile/profilePage";
-// import {combineReducers,createStore} from "redux";
-// import {Provider} from "react-redux";
-// import tweets from "./reducers/tweets";
+import {Provider} from "react-redux";
+import {combineReducers, createStore} from "redux";
+import tweets from "./reducers/tweets";
+import profile from "./reducers/profile";
+import who from "./reducers/who";
 
-// const reducer=combineReducers({tweets:tweets, who, profile})
-// const store=createStore(reducer);
+
+const reducer=combineReducers({tweets:tweets, who, profile})
+const store=createStore(reducer);
 
 function App() {
     return (
-        // <Provider store={store}>
+        <Provider store={store}>
             <BrowserRouter>
 
-                {/*<li>*/}
-                {/*    <Link to="/a7">A7</Link>*/}
-                {/*</li>*/}
+                <li>
+                    <Link to="/a6">A6</Link>
+                </li>
 
-                {/*<Route path = "/a7">*/}
-                {/*    <page/>*/}
-                {/*</Route>*/}
+                <li>
+                    <Link to="/a7">A7</Link>
+                </li>
 
-
-
-                <Route path={["/a7", "/a7/practice"]} exact={true}>
-                    <Practice/>
-                </Route>
-                <Route path="/a7/twitter">
-                    <Build/>
+                <div className="container">
+                <Route path="/a6/">
+                    <HomeworkSix/>
                 </Route>
 
-                <APIExamples/>
-                <MovieApiClient/>
-
-                {/*<Route path="/a7/edit">*/}
-                {/*    <ProfileReduxExample/>*/}
-                {/*</Route>*/}
-
-                {/*<Route path="/a7/profile">*/}
-                {/*    <ProfilePage/>*/}
-                {/*</Route>*/}
+                <Route path = "/a7">
+                    <HomeworkSeven/>
+                </Route>
+                </div>
 
 
-
-                {/*<Route path="/a6/twitter/home" component={HomeScreen}/>*/}
-                {/*<Route path="/a6/twitter/explore" component={ExploreScreen}/>*/}
+                {/*<APIExamples/>*/}
+                {/*<MovieApiClient/>*/}
 
             </BrowserRouter>
-        // </Provider>
+        </Provider>
     );
 }
 export default App;
-
-
-
-
-
-
-// import HelloWorld from "./components/a6/HelloWorld";
-// import Practice from "./components/a6/Practice";
-// import Build from "./components/a6/Build";
-
-// <div className="container">
-//     <Route path="/a6/hello" exact={true}>
-//         <HelloWorld/>
-//     </Route>
-//     <Route  path={["/", "/a6", "/a6/practice"]} exact={true}>
-//         <Practice/>
-//     </Route>
-//     <Route path="/a6/build" exact={true}>
-//         <Build/>
-//     </Route>
-// </div>
