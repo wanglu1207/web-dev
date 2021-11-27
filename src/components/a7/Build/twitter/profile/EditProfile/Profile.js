@@ -4,12 +4,17 @@ import {useDispatch} from "react-redux";
 import {Link} from "react-router-dom";
 import NavigationSidebar from "../../../NavigationSidebar/index";
 
-const EditProfile=()=>{
+
+const EditProfile=({profile})=>{
     const [name, setName]=useState({newName:profileData.name});
     const [bio, setBio]=useState({newBio:profileData.bio});
     const [location, setLocation]=useState({newLocation:profileData.location});
     const [website, setWebsite]=useState({newWebsite:profileData.website});
     const [birth, setBirthday]=useState({newBirthday:profileData.dateOfBirth});
+
+
+
+
     const dispatch=useDispatch();
 
     const nameChangeHandle=(event)=>{

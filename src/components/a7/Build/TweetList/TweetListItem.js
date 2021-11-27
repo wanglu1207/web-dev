@@ -14,7 +14,7 @@ const   TweetListItem = ({tweet}) => {
                 <tr>
                     <td className="align-text-top">
                         <img className="rounded-circle wd-avatar-image"
-                            src={tweet['logo-image']}/>
+                            src={tweet['avatar-image']}/>
 
                     </td>
                     <td className="ps-3" style={{width: '100%'}}>

@@ -44,8 +44,8 @@ const tweets = (state = initialState, action) => {
                 "handle": "ReactJS",
                 "time": "2h",
                 ...action.tweet,
-                "avatar-image": "../../../images/react-blue.png",
-                "logo-image": "../../../images/react-blue.png",
+                "avatar-image": "../../../images/js.png",
+                "logo-image": "../../../images/js.png",
                 "stats": {
                     "comments": 123,
                     "retweets": 234,
