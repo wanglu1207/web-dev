@@ -7,7 +7,7 @@ const profileData=
         bio: "Faculty, Software Engineer, AI, Space, and renewable enthusiast.Retweets and likes are not endorsements.",
         website: "youtube.com/webdevtv",
         location: "Boston, MA",
-        dateOfBirth: "November 21, 1968",
+        dateOfBirth: "1999-10-10",
         dateJoined: "April 2009",
         followingCount: 312,
         followersCount: 180

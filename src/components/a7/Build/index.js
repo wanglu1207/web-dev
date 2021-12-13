@@ -1,7 +1,7 @@
 import React from "react";
 import ExploreScreen from "./ExploreScreen/ExploreScreen";
 import HomeScreen from "./HomeScreen/HomeScreen";
-import {Link, Route} from "react-router-dom";
+import { Route} from "react-router-dom";
 import who from "../../../reducers/who";
 import tweets from "../../../reducers/tweets";
 import profile from "../../../reducers/profile";
