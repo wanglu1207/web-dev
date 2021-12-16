@@ -1,9 +1,8 @@
 import React from "react";
 import {useDispatch} from "react-redux";
 import {likeTweet} from "../../../../services/tweetService";
-
 const TweetStats = ({tweet}) => {
-    const dispatc = useDispatch();
+    const dispatch = useDispatch();
     const likeClickHandler = () => {
         likeTweet(dispatch, tweet);
     };

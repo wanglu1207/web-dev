@@ -6,21 +6,18 @@ import './vendors/fontawesome/css/all.min.css';
 import {BrowserRouter, Link, Route} from "react-router-dom";
 import HomeworkSix from "./components/a6/HomeworkSix";
 import HomeworkSeven from "./components/a7";
-import APIExamples from "./components/a8/Practice/APIExamples";
-import MovieApiClient from "./components/a8/Practice/APIExamples/MovieApiClient";
+import HelloApiClient from "./components/a8/Practice/APIExamples/HelloApiClient";
 import {Provider} from "react-redux";
 import {combineReducers, createStore} from "redux";
 import tweets from "./reducers/tweets";
 import profile from "./reducers/profile";
 import who from "./reducers/who";
+import HomeworkEight from "./components/a8";
 
 
-const reducer=combineReducers({tweets:tweets, who, profile})
-const store=createStore(reducer);
 
 function App() {
     return (
-        <Provider store={store}>
             <BrowserRouter>
 
                 <li>
@@ -31,6 +28,9 @@ function App() {
                     <Link to="/a7">A7</Link>
                 </li>
 
+                <li>
+                    <Link to="/a8">A8</Link>
+                </li>
                 <div className="container">
                 <Route path="/a6/">
                     <HomeworkSix/>
@@ -39,14 +39,16 @@ function App() {
                 <Route path = "/a7">
                     <HomeworkSeven/>
                 </Route>
+
+                <Route path = "/a8">
+                    <HomeworkEight/>
+                </Route>
                 </div>
-
-
-                {/*<APIExamples/>*/}
-                {/*<MovieApiClient/>*/}
+                <li>
+                    <Link to="/a8/practice">A8</Link> | <Link to="/a8/twitter/home">Build</Link>
+                </li>
 
             </BrowserRouter>
-        </Provider>
     );
 }
 export default App;

@@ -8,18 +8,18 @@ const NavigationSidebar = (
     return(
         <>
             <div className={`list-group`}>
-                <Link to="/a7/">
+                <Link to="/a8/">
                 <a className={`list-group-item`} href="/">
                     <i className={`fab fa-twitter`}></i></a>
             </Link>
-            <Link to="/a7/twitter/home">
+            <Link to="/a8/twitter/home">
             <a className={`list-group-item list-group-item-action ${active==='home' ? 'active':''}`} href="../HomeScreen/home.html">
                 <i className={`fas fa-home`}></i>
                 <span className={`d-none d-xl-inline-block d-xxl-inline-block`}>Home</span>
             </a>
             </Link>
 
-                <Link to="/a7/twitter/explore">
+                <Link to="/a8/twitter/explore">
                 <a className={`list-group-item list-group-item-action ${active==='explore' ? 'active':''}`} href="../ExploreScreen/explore.html">
                 <i className={`fas fa-hashtag`}></i>
                 <span className={`d-none d-xl-inline-block d-xxl-inline-block`}>Explore</span>
@@ -46,7 +46,7 @@ const NavigationSidebar = (
                 <span className={`d-none d-xl-inline-block d-xxl-inline-block`}>Lists</span>
             </a>
 
-            <a className={`list-group-item ${active === 'profile' ? 'active' :''}`} href="/a7/twitter/profile">
+            <a className={`list-group-item ${active === 'profile' ? 'active' :''}`} href="/a8/twitter/profile">
                 <i className={`fas fa-user`}></i>
                 <span className={`d-none d-xl-inline-block d-xxl-inline-block`}>Profile</span>
             </a>

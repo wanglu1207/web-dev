@@ -2,7 +2,7 @@ import React from "react";
 import './tweet.css';
 import TweetStats from "./TweetStats";
 import {useDispatch} from "react-redux";
-import {deleteTweet} from "../../../../services/tweetService"
+import {deleteTweet} from "../../../../services/tweetService";
 
 
 const   TweetListItem = ({tweet}) => {
@@ -16,11 +16,11 @@ const   TweetListItem = ({tweet}) => {
                 <tr>
                     <td className="align-text-top">
                         <img className="rounded-circle wd-avatar-image"
-                            src={tweet['logo-image']}/>
+                            src={tweet['avatar-image']}/>
 
                     </td>
                     <td className="ps-3" style={{width: '100%'}}>
-                        <i onClick={deleteTweetClickHandler} className="fa fa-remove fa-pull-right"></i>
+                        <i onClick={deleteTweetClickHandler} className="fab fa-adn fa-pull-right"></i>
                         <span className="fw-bold">{tweet.userName}</span>
                         {tweet.verified && <i className="ms-1 fas fa-badge-check"></i>}
                         <span className="ms-1 text-secondary">@{tweet.handle}</span>

@@ -1,12 +1,15 @@
-import React from "react";
-import {useSelector} from "react-redux";
+import React, { useEffect } from 'react'
 import PostItem from "./PostItem";
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchAllTweets } from '../../../../services/tweetService';
 
-// const selectAllPosts=(state)=>state.posts.posts;
 
 const PostList = () => {
-    // const selectAllPosts=(state)=>state.posts;
-    const posts=useSelector((state)=>state);
+    const selectAllPosts=(state)=>state.posts;
+    const dispatch = useDispatch();
+    const posts = useSelector(selectAllPosts);
+    useEffect(() => fetchAllTweets(dispatch), [])
+    // const posts=useSelector((state)=>state);
     return (
             <ul className="list-group">
                 {

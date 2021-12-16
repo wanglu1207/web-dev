@@ -1,4 +1,6 @@
 import React, {useState} from "react";
+import {postNewTweet, fetchAllTweets} from "../../../../services/tweetService";
+
 import {useDispatch} from "react-redux";
 
 const WhatsHappening = () => {
@@ -8,8 +10,8 @@ const WhatsHappening = () => {
         postNewTweet(dispatch, {
             tweet: whatsHappening
         });
-
     }
+
     return(
         <>
             <table style={{marginBottom: '16px'}}>
